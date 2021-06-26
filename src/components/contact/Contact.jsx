@@ -91,15 +91,17 @@ export default function Contact() {
                     </div>
                     <div className="linkedin">
                         <div className={classes.in}>
-                            <LinkedInIcon />
+                        <a href="https://www.linkedin.com/in/thngyuxuan/" rel="noreferrer" target="_blank"><LinkedInIcon /></a>
                         </div>
-                        <a href="https://www.linkedin.com/in/thngyuxuan/" rel="noreferrer" target="_blank">in/thngyuxuan</a>
+                        <a href="https://www.linkedin.com/in/thngyuxuan/" rel="noreferrer" target="_blank" className="link">in/thngyuxuan</a>
                     </div>
                     <div className="insta">
                         <div className={classes.insta}>
-                            <InstagramIcon />
+                            <a href="https://www.instagram.com/yuxuanthng/" rel="noreferrer" target="_blank"><InstagramIcon /></a>
                         </div>
+                        <a href="https://www.instagram.com/yuxuanthng/" rel="noreferrer" target="_blank" className="link">@yuxuanthng</a>
                     </div>
+                </div>
                 </FadeIn>
             </div>
             <div className="right">
@@ -116,5 +118,5 @@ export default function Contact() {
         </div>
 
     )
-
+    
 }

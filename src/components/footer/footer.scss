@@ -40,9 +40,8 @@
                 a{
                     text-decoration: none;
                     font-size: 25px;
-                    
-                    
                 }
+                
                 a:hover {
                     background-color: paleturquoise;
                 }
@@ -52,6 +51,17 @@
                 h3 {
                     padding-right: 30px;
                 }
+            }
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        position: fixed;
+        bottom: 0;
+
+        .wrapper{
+            .left {
+                font-style: 10px;
             }
         }
     }

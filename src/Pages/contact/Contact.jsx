@@ -82,24 +82,17 @@ export default function Contact() {
                     <div className="title">
                         GET IN TOUCH
                     </div>
-                    <div className="wrapper">
-                        <div className="location">
-                            <div className={classes.pin}>
-                                <RoomIcon />
-                            </div>
-                            10 Kent Ridge Dr, Singapore 119242
+                    <div className="linkedin">
+                        <div className={classes.in}>
+                        <a href="https://www.linkedin.com/in/thngyuxuan/" rel="noreferrer" target="_blank"><LinkedInIcon /></a>
                         </div>
-                        <div className="linkedin">
-                            <div className={classes.in}>
-                                <LinkedInIcon />
-                            </div>
-                            <a href="https://www.linkedin.com/in/thngyuxuan/" rel="noreferrer" target="_blank">in/thngyuxuan</a>
+                        <a href="https://www.linkedin.com/in/thngyuxuan/" rel="noreferrer" target="_blank" className="link">in/thngyuxuan</a>
+                    </div>
+                    <div className="insta">
+                        <div className={classes.insta}>
+                            <a href="https://www.instagram.com/yuxuanthng/" rel="noreferrer" target="_blank"><InstagramIcon /></a>
                         </div>
-                        <div className="insta">
-                            <div className={classes.insta}>
-                                <InstagramIcon />
-                            </div>
-                        </div>
+                        <a href="https://www.instagram.com/yuxuanthng/" rel="noreferrer" target="_blank" className="link">@yuxuanthng</a>
                     </div>
                 </FadeIn>
             </div>
@@ -116,6 +109,6 @@ export default function Contact() {
                 </div>
             </div>
 
-            )
-
+    )
+    
 }

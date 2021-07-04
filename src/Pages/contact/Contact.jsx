@@ -70,7 +70,6 @@ export default function Contact() {
 
     const classes = useStyles();
     return (
-
         <div className="contact" id="contact">
             {result && (
                 <p className={`${result.success ? 'success' : 'error'}`}>
@@ -81,13 +80,6 @@ export default function Contact() {
                 <FadeIn delay="100" transitionDuration="500">
                     <div className="title">
                         GET IN TOUCH
-                </div>
-                <div className="wrapper">
-                    <div className="location">
-                        <div className={classes.pin}>
-                            <RoomIcon />
-                        </div>
-                        10 Kent Ridge Dr, Singapore 119242
                     </div>
                     <div className="linkedin">
                         <div className={classes.in}>
@@ -101,21 +93,20 @@ export default function Contact() {
                         </div>
                         <a href="https://www.instagram.com/yuxuanthng/" rel="noreferrer" target="_blank" className="link">@yuxuanthng</a>
                     </div>
+                </FadeIn>
+            </div>
+                <div className="right">
+                    <FadeIn delay="100" transitionDuration="500">
+                        <h2>Drop me a message!</h2>
+                        <form onSubmit={handleSubmit}>
+                            <input type="text" placeholder="Name" onChange={onInputChange} />
+                            <input type="email" placeholder="Email" onChange={onInputChange} />
+                            <textarea placeholder="Message" onChange={onInputChange} />
+                            <button type="submit">Send</button>
+                        </form>
+                    </FadeIn>
                 </div>
-                </FadeIn>
             </div>
-            <div className="right">
-                <FadeIn delay="100" transitionDuration="500">
-                    <h2>Drop me a message!</h2>
-                    <form onSubmit={handleSubmit}>
-                        <input type="text" placeholder="Name" onChange={onInputChange} />
-                        <input type = "email" placeholder="Email" onChange={onInputChange} />
-                        <textarea placeholder="Message" onChange={onInputChange} />
-                        <button type="submit">Send</button>
-                    </form>
-                </FadeIn>
-            </div>
-        </div>
 
     )
     
